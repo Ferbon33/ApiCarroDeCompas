@@ -1,0 +1,34 @@
+-------------------tabla libros-------
+CREATE TABLE [dbo].[Articulos] (
+	[Id] [int] IDENTITY (1, 1) NOT NULL ,
+	[codigoArticulo] [int] (9) COLLATE SQL_Latin1_General_CP1_CI_AI NOT NULL ,
+	[nombre] [varchar] (25) COLLATE SQL_Latin1_General_CP1_CI_AI NULL ,
+	[categoria] [varchar] (25) COLLATE SQL_Latin1_General_CP1_CI_AI NULL ,
+	[precio] [int] (5) COLLATE SQL_Latin1_General_CP1_CI_AI NULL,
+    [Stock] [int] (5) COLLATE SQL_Latin1_General_CP1_CI_AI NULL,
+	[FechaAlta] datetime NULL
+	
+	
+	
+)
+---------------------tabla usuarios--------------
+CREATE TABLE [dbo].[usuarios] (
+	[Id] [int] IDENTITY (1, 1) NOT NULL ,
+	[nombre] [int] (9) COLLATE SQL_Latin1_General_CP1_CI_AI NOT NULL ,
+	[apellido] [varchar] (25) COLLATE SQL_Latin1_General_CP1_CI_AI NULL ,
+	[telefono] [varchar] (25) COLLATE SQL_Latin1_General_CP1_CI_AI NULL,
+	[user] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AI NULL,
+	[pass] [varchar] (6) COLLATE SQL_Latin1_General_CP1_CI_AI NULL
+
+)
+---------------------tabla carroCompras--------------
+CREATE TABLE [dbo].[carroCompras] (
+	[Id] [int] IDENTITY (1, 1) NOT NULL ,
+	[codigoArticulo] [int] (9) COLLATE SQL_Latin1_General_CP1_CI_AI NOT NULL ,
+	[codigoUsuario] [int] (9) COLLATE SQL_Latin1_General_CP1_CI_AI NULL ,
+	[estado] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AI NULL
+
+)
+	
+	
+	
